@@ -43,7 +43,7 @@ Clover的大部分功能实际上在OpenCore中以一些奇怪的形式得到了
   * 但是在macOS中可以这样做
 * 不支持传统gpu的自动设备属性注入
   * 例如:InjectIntel, InjectNVIDIA InjectAti
-  * 然而,可以手动: [GPU patching](https://dortania.github.io/OpenCore-Post-Install/gpu-patching/)
+  * 然而,可以手动: [GPU patching](https://sumingyd.github.io/OpenCore-Post-Install/gpu-patching/)
 * 不支持IRQ冲突补丁
   * 可以使用 [SSDTTime](https://github.com/corpnewt/SSDTTime)
 * 不支持旧的cpu生成P和C状态
@@ -81,7 +81,7 @@ OpenCore的版本号并不代表项目的质量。相反，它更多的是一种
 
 默认情况下，OpenCore将假设所有操作系统都应该平等对待ACPI和SMBIOS信息。这种想法的原因包括三个部分:
 
-* 这允许正确的多引导支持，如 [BootCamp](https://dortania.github.io/OpenCore-Post-Install/multiboot/bootcamp.html)
+* 这允许正确的多引导支持，如 [多引导支持](https://sumingyd.github.io/OpenCore-Post-Install/multiboot/bootcamp.html)
 * 避免制作不良的dsdt，并鼓励适当的ACPI实践
 * 避免信息被多次注入的边缘情况，通常在Clover中看到
   * 例如：一旦启动boot.efi，你将如何处理SMBIOS和ACPI数据注入， 但后来被赶出去吗? 因此试图撤消它们可能相当危险。这就是为什么Clover的方法是不被允许的。
@@ -104,15 +104,15 @@ OpenCore的版本号并不代表项目的质量。相反，它更多的是一种
 
 Acidanthera测试了很多版本的OS X，我自己也在我的旧HP DC 7900 (Core2 Quad Q8300)上运行过很多版本的OS X。以下是我测试过的一小部分:
 
-![](./images/installer-guide/legacy-mac-install-md/dumpster/10.4-Tiger.png)
+![](../../images/installer-guide/legacy-mac-install-md/dumpster/10.4-Tiger.png)
 
-![](./images/installer-guide/legacy-mac-install-md/dumpster/10.5-Leopard.png)
+![](../../images/installer-guide/legacy-mac-install-md/dumpster/10.5-Leopard.png)
 
-![](./images/installer-guide/legacy-mac-install-md/dumpster/10.6-Snow-Loepard.png)
+![](../../images/installer-guide/legacy-mac-install-md/dumpster/10.6-Snow-Loepard.png)
 
-![](./images/installer-guide/legacy-mac-install-md/dumpster/10.7-Lion.png)
+![](../../images/installer-guide/legacy-mac-install-md/dumpster/10.7-Lion.png)
 
-![](./images/installer-guide/legacy-mac-install-md/dumpster/10.8-MountainLion.png)
+![](../../images/installer-guide/legacy-mac-install-md/dumpster/10.8-MountainLion.png)
 
 ![](./images/installer-guide/legacy-mac-install-md/dumpster/10.9-Mavericks.png)
 
@@ -156,4 +156,4 @@ hackintoshing位于法律的灰色地带，主要是因为虽然这并不违法�
 
 另一个问题与任何新的NVIDIA gpu有关，因为苹果停止了与它们一起发货的机器，因此它们从来没有得到苹果的官方操作系统支持。相反，用户不得不依赖NVIDIA的第三方驱动。由于苹果新推出的安全引导的问题，他们不能再支持网络驱动程序，因此NVIDIA不能在更新的平台上发布它们，限制它们在mac OS 10.13, High Sierra。
 
-有关操作系统支持的更多信息，请参阅这里: [GPU买家指南](https://dortania.github.io/GPU-Buyers-Guide/)
+有关操作系统支持的更多信息，请参阅这里: [GPU买家指南](https://sumingyd.github.io/GPU-Buyers-Guide/)
