@@ -12,7 +12,9 @@ meta:
 
 # 什么是OpenCore以及谁适用本指南
 
-OpenCore就是我们常说的“引导加载程序”——它是我们用来使用macOS系统进行准备的复杂软件——特别是通过为macOS注入新数据，如SMBIOS、ACPI表和kext。 本工具和别的像Clover之类的其他工具的不同之处在于它在设计时就考虑到了安全和高效率，使我们能够使用在MAC实体机上的许多安全功能，如 [系统完整性保护](https://support.apple.com/en-ca/HT204899) 和 [文件库](https://support.apple.com/en-ca/HT204837).更深入的了解可以在这里找到：[为什么OpenCore在Clover和其他软件之上](why-oc.md)
+请点击这里访问：[页面地址](https://sumingyd.github.io/OpenCore-Install-Guide/)，GitHub仓库地址请访问[这里](https://github.com/sumingyd/OpenCore-Install-Guide)，建这个仓库只是便于被搜索到。
+
+因为直接fork的仓库无法被搜索，所以才建了这个仓库。
 
 本指南主要关注以下两点:
 
